@@ -1,0 +1,27 @@
+GET http://localhost:5000/mahasiswa
+
+###
+GET http://localhost:5000/mahasiswa/1
+
+###
+POST http://localhost:5000/mahasiswa
+Content-Type: application/json
+
+{
+    "nama": "Fikri",
+    "jurusan": "FTI",
+    "gender": "Laki-Laki"
+}
+
+###
+PATCH http://localhost:5000/mahasiswa/1
+Content-Type: application/json
+
+{
+    "nama": "Nathan",
+    "jurusan": "PSI",
+    "gender": "Laki-Laki"
+}
+
+###
+DELETE http://localhost:5000/mahasiswa/2
